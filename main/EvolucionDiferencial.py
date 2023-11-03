@@ -5,7 +5,6 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 import random
-import time 
 
 mu = 0.5 #Factor de Escala
 cr = 0.5 #Tasa de recombinacion
@@ -83,7 +82,6 @@ def calcMaxFamilias(familiaGenerada):
             
                   result.append(f"\tLa nueva generacion No. {i+1} Es: \n" 
                         +f"{nuevaGeneracion}")
-                  familiaOriginal = nuevaGeneracion
       else:
             result.append(f"El peso del objetivo: {familiaOriginal[i]} es: {pesoObj}" 
                   +f"\nEl peso del nuevo elemento es: {pesoVi}" 
@@ -150,7 +148,6 @@ def calcMinFamilias(familiaGenerada):
             
                   result.append(f"\tLa nueva generacion No. {i+1} Es: \n" 
                         +f"{nuevaGeneracion}")
-                  familiaOriginal = nuevaGeneracion
       else:
             result.append(f"El peso del objetivo: {familiaOriginal[i]} es: {pesoObj}" 
                   +f"\nEl peso del nuevo elemento es: {pesoVi}" 
